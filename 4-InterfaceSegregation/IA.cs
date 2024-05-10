@@ -1,9 +1,10 @@
 namespace InterfaceSegregation
 {
-    public class Tester : IWorkTeamActivities, ITestActivities
+    public class IA : IWorkTeamActivities, IIAActivities
     {
-        public Tester()
+        public IA()
         {
+            
         }
 
         public void Comunicate()
@@ -16,7 +17,7 @@ namespace InterfaceSegregation
             throw new NotImplementedException();
         }
 
-        public void Test()
+        void IIAActivities.IA()
         {
             throw new NotImplementedException();
         }
